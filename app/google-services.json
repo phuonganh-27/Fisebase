@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684562771626",
+    "project_id": "gkcar-84cf6",
+    "storage_bucket": "gkcar-84cf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684562771626:android:f54c484499338c2faf6ad3",
+        "android_client_info": {
+          "package_name": "com.example.gk_car"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKWiorgBbi25V4nvaK_39WO6GCvGT_izg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
