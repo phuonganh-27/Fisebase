@@ -47,6 +47,7 @@ public class HomeActivity extends AppCompatActivity {
                                 .requestIdToken("684562771626-viq5ris8t9thv72kh3vndnt1jkiqe186.apps.googleusercontent.com")
                                 .requestEmail()
                                 .build());
+
                 mGoogleSignInClient.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

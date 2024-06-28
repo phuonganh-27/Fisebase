@@ -70,6 +70,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_btn"
         android:text="Đăng ký"
+
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

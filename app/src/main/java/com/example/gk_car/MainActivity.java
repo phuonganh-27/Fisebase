@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
                             firebaseAuth.sendPasswordResetEmail(emailForget.getText().toString());
                             Toast.makeText(MainActivity.this, "Đã gửi mã tới email!", Toast.LENGTH_SHORT).show();
                         }
+
                     }
                 });
             }

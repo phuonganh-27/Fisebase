@@ -46,6 +46,7 @@ public class Dangky extends AppCompatActivity {
             return insets;
         });
 
+
         imgbtn_quaylai = findViewById(R.id.imgbtn_quaylai);
         imgbtn_quaylai.setOnClickListener(v -> {
             Intent myIntent = new Intent(Dangky.this, MainActivity.class);
