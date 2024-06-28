@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "684562771626",
+    "firebase_url": "https://gkcar-84cf6-default-rtdb.firebaseio.com",
     "project_id": "gkcar-84cf6",
     "storage_bucket": "gkcar-84cf6.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.gk_car"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "684562771626-6l4vfg007jb93v3uedve3lnbjcevam2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gk_car",
+            "certificate_hash": "043416c51d4156ee5014ed3e9aa6c9ffeecbdeb4"
+          }
+        },
+        {
+          "client_id": "684562771626-viq5ris8t9thv72kh3vndnt1jkiqe186.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAKWiorgBbi25V4nvaK_39WO6GCvGT_izg"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684562771626-viq5ris8t9thv72kh3vndnt1jkiqe186.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

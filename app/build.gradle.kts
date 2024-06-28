@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.gk_car"
-        minSdk = 30
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.firebase.auth)
     testImplementation(libs.junit)
+    implementation("com.google.android.gms:play-services-auth:21.1.1")
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }

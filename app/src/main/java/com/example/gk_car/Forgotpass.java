@@ -2,7 +2,6 @@ package com.example.gk_car;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -13,6 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.gk_car.Database.DBHelper;
+import com.google.firebase.Firebase;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Forgotpass extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "MESSAGE";
@@ -50,14 +53,8 @@ public class Forgotpass extends AppCompatActivity {
                 Toast.makeText(Forgotpass.this, "Vui lòng nhập email", Toast.LENGTH_SHORT).show();
                 return;
             }
-            boolean checkemail = mydb.checkEmail(emailStr);
-            if (checkemail) {
-                Intent myIntent = new Intent(Forgotpass.this, Send.class);
-                myIntent.putExtra("email", emailStr);
-                startActivity(myIntent);
-            } else {
-                Toast.makeText(Forgotpass.this, "Email không hợp lệ", Toast.LENGTH_SHORT).show();
-            }
+            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+            firebaseAuth.sendPasswordResetEmail(emailStr);
         });
     }
 }
